@@ -1,0 +1,155 @@
+
+Gebruiker@DESKTOP-LRPQORF MINGW32 ~
+$ node
+
+/* 1 */
+
+> console.log("Hello,World/Hallo,Wereld/Hola,Mundo");
+Hello,World/Hallo,Wereld/Hola,Mundo
+undefined
+
+/* 2 */
+
+console.log('I\'m awesome');
+
+/* 3 */
+
+> let x;
+undefined
+> console.log("the value of the variable x is: undefined");
+the value of the variable x is: undefined
+undefined
+> x
+undefined
+> console.log("the value of the variable x is:" + x);
+the value of the variable x is:undefined
+undefined
+> x
+undefined
+> x =3 ;
+3
+>  console.log("the value of the variable x is: 3")
+the value of the variable x is: 3
+undefined
+> console.log("the value of the variable x is:" + x);
+the value of the variable x is:3
+undefined
+
+/* 4 */
+
+> let y;
+undefined
+> console.log("the value of the variable y will be: undefined");
+the value of the variable y will be: undefined
+undefined
+> console.log("the value of the  variable y is: " + y);
+the value of the  variable y is: undefined
+undefined
+> y = "Test string";
+'Test string'
+> console.log("the value of the variable y will be: Test string");
+the value of the variable y will be: Test string
+undefined
+> console.log("the value of the  variable y is: " + y);
+the value of the  variable y is: Test string
+undefined
+
+/* 5 */
+
+> let z = 7.25;
+undefined
+> console.log (z);
+7.25
+undefined
+> let a = Math.round(z);
+undefined
+> console.log(a);
+7
+undefined
+> let b = Math.max(a,z);
+undefined
+> console.log(b);
+7.25
+undefined
+>
+
+/* 6 */
+
+> let animals = []
+undefined
+> console.log('the value of animals will be: empty');
+the value of animals will be: empty
+undefined
+> console.log(animals);
+[]
+undefined
+> let FavoriteAnimals=["Eagle","Wolf","Tiger"]
+undefined
+> console.log( FavoriteAnimals)
+[ 'Eagle', 'Wolf', 'Tiger' ]
+undefined
+> FavoriteAnimals.push("baby pig");
+4
+> console.log(FavoriteAnimals);
+[ 'Eagle', 'Wolf', 'Tiger', 'baby pig' ]
+undefined
+
+/* 7 */
+
+> let myString = "this is a test";
+undefined
+> console.log(myString.length);
+14
+undefined
+
+/* 8 */
+
+ let foo = 1;
+
+ console.log("the value of foo is:" + foo);
+
+let boo = "Hoi";
+console.log("the value of boo is: " + boo);
+
+let too = true;
+console.log("the value of too is: " + too);
+
+let noo = 1.1;
+undefinedconsole.log("the value of noo is: " + noo);
+
+console.log("foo is a Number\nboo is a String\ntoo is Boolean\noo is a Number");
+
+console.log("the type of foo is" + typeof(foo));
+
+console.log("the type of boo is" + typeof(boo));
+
+console.log("the type of too is" + typeof(too));
+
+console.log("the type of noo is " + typeof(noo));
+
+
+if(typeof(foo) === typeof(boo)){
+
+    console.log("foo and boo are same type");
+
+} else{
+
+    console.log("foo and boo are different types");
+
+}
+
+if(typeof(noo) === typeof(too)){
+
+    console.log("noo and too are same types");
+
+} else{
+
+    console.log("too and noo are different types");
+
+}
+
+/* 9 */
+
+
+
+

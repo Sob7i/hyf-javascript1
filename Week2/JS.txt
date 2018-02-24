@@ -1,0 +1,273 @@
+// 1.Strings
+
+
+let myString = "hello,this,is,a,difficult,to,read,sentence";
+
+console.log(myString);
+
+console.log(myString.length);
+
+console.log(myString.replace(/,/g, ' '));
+
+console.log("\n");
+
+
+// 2.Arrays
+
+
+let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
+
+favoriteAnimals.push("turtle");
+
+console.log(favoriteAnimals);
+
+favoriteAnimals.splice(1, 0, "meerkat");
+
+console.log("The length of the Array is 5: ['blowfish', 'meerkat', 'capricorn', 'giraffe', 'turtle'] ");
+
+console.log(favoriteAnimals);
+
+console.log("The array has a length of:" {favoriteAnimals.length});
+
+let animalIndex = favoriteAnimals.indexOf('giraffe');
+
+if (animalIndex > -1) {
+
+    favoriteAnimals.splice(animalIndex, 1);
+
+}
+
+console.log(favoriteAnimals);
+
+for(let i = 0; i < favoriteAnimals.length; i++){
+
+    let indx = favoriteAnimals.indexOf("meerkat");
+
+    if(indx !== -1){
+
+    console.log("The item you are looking for is at index of: " + indx);
+
+    break;
+
+    }
+
+}
+
+
+// More JavaScript 
+
+
+// 1
+
+
+function sumThree(a, b, c){
+
+    return a + b + c;
+
+}
+
+
+// 2
+
+
+function colorCar(color){
+
+    return "a " + color + " car";
+
+}
+
+console.log(colorCar("red"));
+
+
+// 3
+
+
+const myInfo = {
+
+    name: 'Sobhi', nationality: 'Syrian'
+
+};
+
+function PrintOut(myInfo){
+
+for (var propertyKey in myInfo) {
+
+    console.log(propertyKey + " : " + myInfo[propertyKey]);
+
+    };
+
+};
+
+PrintOut(myInfo);
+
+
+// 4
+
+
+function vehicleType(color, code){
+
+    if(code === 1){
+
+        return "A " + color + " car";
+
+    }
+
+    else if (code === 2){
+
+        return "A " + color + " motorbike";
+
+    }
+
+}
+
+console.log(vehicleType("blue", 2));
+
+
+// 5
+
+
+console.log(3 === 3 ? "true" : "false");
+
+
+// 6
+
+
+function vehicle(color, code, age) {
+
+    if (code === 1 && age >= 3 ) {
+
+        console.log(color + " used car");
+
+    };
+
+    if (code === 2 && age < 3) {
+
+        console.log("as good as new " + color + " motorbike");
+
+    };
+
+};
+
+vehicle("green", 1, 3);
+
+vehicle("white", 1, 1);
+
+
+// 7
+
+
+let listOfVehicles = [ "motorbike", "caravan", "bike"];
+
+
+// 8
+
+
+console.log(listOfVehicles[2]);
+
+
+// 9
+
+
+let arr = ["motorbike", "caravan", "bike", "car"];
+
+console.log(arr[2]);
+
+
+
+function vehicle(color, code, age) {
+
+    if (age > 3 ) {
+
+        console.log('a ' + color + ' used ' + arr[code]); 
+
+    };
+
+    if (age <= 3) {
+
+        console.log("as good as new " + color + " " + arr[code]);
+
+    };
+
+
+};
+
+
+vehicle("green", 1, 3);
+
+vehicle("white", 1, 1);
+
+
+// 10
+
+
+function printAdvertisement() {
+
+
+    let aa = "";
+
+
+    for (let a = 0; a < vehiclesList.length - 1; a++) {
+
+        if (vehiclesList[a].type.endsWith('s')) {
+
+           aa += vehiclesList[a].type + 'es' + ',' + ' ';
+
+        } else {
+
+            aa += vehiclesList[a].type + 's' + ',' + ' ';
+
+        }
+
+    }
+
+    if (vehiclesList[vehiclesList.length - 1].type.endsWith('s')) {
+
+        aa += 'and ' + vehiclesList[vehiclesList.length - 1].type + 'es';
+
+    } else {
+
+        aa += 'and ' + vehiclesList[vehiclesList.length - 1].type + 's';
+
+    }
+
+
+    console.log("Amazing Joe's Garage, we service : " + aa + '.');
+
+}
+
+
+printAdvertisement();
+
+console.log("\n");
+
+
+// 11
+
+
+addvehicles("sportCar");
+
+printAdvertisement();
+
+console.log("\n");
+
+
+// 12
+
+
+let myEmpty = {};
+
+
+// 13-14
+
+
+let myTeachers = {
+
+Names: ["Mauro", "Unmesh", "Philipe"]
+language: ["HTML", "CSS", "JAVASCRIPT"]
+
+};
+
+
+
+
+
